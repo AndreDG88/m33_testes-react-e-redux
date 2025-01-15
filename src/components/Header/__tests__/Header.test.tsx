@@ -1,7 +1,7 @@
 // Arquivo de configuração de testes do componente Header.
 import { screen } from '@testing-library/react'
-import Header from '../Header'
-import { renderizaComProvider } from '../../utils/tests'
+import Header from '..'
+import { renderizaComProvider } from '../../../utils/tests'
 
 // O describe é o switch que agrupa todos os testes refernetes ao componente em questão.
 describe('Testes para o componente header', () => {
