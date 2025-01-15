@@ -58,7 +58,12 @@ export const Plataformas = styled.ul`
     font-weight: bold;
   }
 `
-export const BtnComprar = styled.button`
+interface BtnComprarProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children?: React.ReactNode
+}
+
+export const BtnComprar = styled.button<BtnComprarProps>`
   display: block;
   width: 100%;
   background-image: linear-gradient(

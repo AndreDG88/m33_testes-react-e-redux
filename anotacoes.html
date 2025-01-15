@@ -22,6 +22,18 @@ Aula prática sobre como criar testes em projetos de React com Redux
 7 - Agora vamos para os testes do componete Produto. Então vamos criar a pasta "__tests__" dentro da pasta Produto em componets e na nova pasta vamos criar o arquivo "Produto.test.tsx".
     Acesse este arquivo para ver as configurações e testes feitos. src\components\Produto\__tests__\Produto.test.tsx
 
+8 - Vamos seguir para a parte dos containers, e também para os testes de requisições da página. Primeiramente temos que cria uma pasta "Produtos" dentro de container e mover o "Produtos.tsx" para
+    dentro dela. Não deixe o VS code alterar as importações, mude o nome do arquivo para index.tsx, assim as importações antigas vão continuar valendo. Após isso atualize os imports do próprio arquivo apenas.
+
+9 - Dentro da pasta Produtos, agora dentro de Acontainers, crie a pasta "__tests__" e dentro dela o arquivo de testes "Produtos.test.tsx".
+    Agora é criar e configurar os testes necessários, veja como ficou em src\containers\Produtos\__tests__\Produtos.test.tsx
+
+10 - Para a parte de testes referentes as requisições, vamos preciar trabalahar com mocks, simulações de requisições. OBS: Como o programa já foi atualizado desde a gravção da aula, precisamos instalar a versão utilizada naquela época do
+    msw, que é o "npm i --save-dev msw@1.3.2 --legacy-peer-deps"
+
+11 - Após a configuração do "Produtos.test.tsx", finalizando o processo de testes, uma última alteração deve ser feita. Em App.tsx, na importação da store, deve-se trocar o store por configuraStore.
+    E adicionar uma constante declarando a troca, desta forma: "const store = configuraStore()"
+
 COMANDOS:
 1 - npm run test: para executar a verificação de todos os testes configurados.
 -->
