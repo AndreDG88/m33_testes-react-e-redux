@@ -1,0 +1,26 @@
+<!--
+Aula prática sobre como criar testes em projetos de React com Redux
+
+1 - Na pasta components cria uma nova pasta com o nome "__tests__", Caso tenha a extensão de icones do VS code instalado, vai notar que a pasta terá um icone próprio.
+    O próprio programa entende a finalidade daquela pasta.
+
+2 - Vamos começar pelo Header, crie um novo arquivo dentro da nova pasta com o Nome de "Header.test.tsx".
+    Dentro deste arquivo vamos fazer as configurações para seus respectivos teste. Para ver como ficou, acesse o arquivo na pasta "__tests__" dentro de "components".
+
+3 - Após tentarmos rodar o primeiro testes, ELE VAI DAR ERRO, e vamos ver que teremos de criar dentro de "src", o arquivo "setupTests.ts".
+    Este arquivo é muito importante, ele que gera a importação e acesso a biblioteca de funcões e recursos do jest.
+
+4 - Ainda na criação de testes do header, quando for fazer os testes referentes ao carrinho, você vai precisar fazer alterações em outros arquivos para ter o renorno dos testes. Neste caso, vamos alterar o reducer do carrinho.
+    E vamos precisar criar uma nova pasta em "src" chamada de "utils". Como o próprio nome indica, é uma pasta de utilidades, ferramentas para variados arquivos. E nela desta vez, vamos criar componentes de teste. Crie nesta pasta
+    o arquivo "tests.tsx". Nele criaremos funções de teste personalizados que não tem na '@testing-library/react'.
+
+5 - Para que os testes personalizados funcionem, a Store precisa ser modificada para poder receber estes estados iniciais personalizados, acesse o "index.ts" em store para ver as alterações.
+
+6 - Após as configurações na store, em Header, dentro de componets, acesse o index. Nele nas importações e na const itens, troque o RootReducer por RootSate
+
+7 - Para o test do número de produtos e valor do carrinho em header. Algumas alterações devem ser feitas no index do header, dentro de components.
+    Acessse o arquivo para ver as alterações. src\components\Header\index.tsx
+
+COMANDOS:
+1 - npm run test: para executar a verificação de todos os testes configurados.
+-->
